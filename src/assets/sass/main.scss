@@ -19,7 +19,8 @@
 //
 // ----- animation keyframes ----- //
 //
-//@import "foundation/animatinon/_keyframes";
+@import "foundation/animation/_keyframe";
+@import "foundation/font-awesome/scss/_font-awesome.scss";
 //
 // plugin
 // - - - - - - - - - - -
@@ -63,8 +64,7 @@
 // -----------------------------------------------------------------
 //
 //
-//@import "object/component/_button";
-
+@import "object/component/_button";
 //
 //
 //

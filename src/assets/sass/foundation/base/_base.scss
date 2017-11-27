@@ -18,46 +18,47 @@ commom link style.
 
 */
 html {
-  font-size: $base-fontsize;
+  font-size: 14px;
 }
 
 body {
-  @include fontsize();
-  font-family: $font-sans-serif;
-  font-weight: $base-fontweight;
-  color: $text-color;
-  background-color: $white;
+  //@include fontsize();
+  font-family: 'Montserrat' -apple-system, BlinkMacSystemFont, "ヒラギノ角ゴ Pro W3";
+  //font-weight: $base-fontweight;
+  //color: $text-color;
+  //background-color: $white;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-feature-settings: "pwid";
+  //font-feature-settings: "pwid";
   //
-  .safari & {
-    font-feature-settings : "pkna"; // follow back -- ios10 safari10
-  }
-  .ie & {
-    font-family: $font-ie;
-  }
+  //.safari & {
+  //  font-feature-settings : "pkna"; // follow back -- ios10 safari10
+  //}
+  //.ie & {
+  //  font-family: $font-ie;
+  //}
 }
 
 a {
-  color: $primary-color;
-  transition: $duration-fast;
+  //color: $primary-color;
+  //transition: $duration-fast;
   cursor: pointer;
 }
 
 img {
   max-width: 100%;
+  vertical-align: bottom;
   height: auto;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid rgba($text-color, 1);
-  margin: 1em auto;
-  padding: 0;
-}
+//hr {
+//  display: block;
+//  height: 1px;
+//  border: 0;
+//  border-top: 1px solid rgba($text-color, 1);
+//  margin: 1em auto;
+//  padding: 0;
+//}
 
 input,
 button,
@@ -73,12 +74,8 @@ select {
 }
 
 ::selection {
-  background: $thirdry-color;
-  color: $text-color;
-}
-
-.wrap {
-  overflow: hidden;
+  //background: $thirdry-color;
+  //color: $text-color;
 }
 
 //

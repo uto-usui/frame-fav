@@ -26,8 +26,7 @@
   <link rel="apple-touch-icon-precomposed" href="assets/images/">
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/main.min.css?var=20161111">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 </head>
 
 <!-- header -->
@@ -40,11 +39,51 @@
 
 
 
-      <main class="main  main--home">
+      <main class="main  main--home" id="main">
 
-          <div id="app">{{ message }}
-              <my-post></my-post>
+        <style>
+          .main {
+            padding: 1rem;
+          }
+          p + p {
+            margin-top: 1rem;
+          }
+        </style>
 
+          <div id="app">
+              <p>
+                  <fav-button type="" icon="">button</fav-button>
+              </p>
+              <p>
+                  <fav-button type="primary" icon="twitter">button</fav-button>
+                  <fav-button type="primary" size="small" icon="twitter">button</fav-button>
+                  <fav-button type="primary" size="medium" icon="twitter">button</fav-button>
+                  <fav-button type="primary" size="large" icon="twitter">button</fav-button>
+              </p>
+              <p>
+                  <fav-button type="primary" icon="facebook">primary</fav-button>
+                  <fav-button type="secondary" icon="twitter">secondary</fav-button>
+                  <fav-button type="success" icon="coffee">success</fav-button>
+                  <fav-button type="warning" icon="check">warning</fav-button>
+                  <fav-button type="danger" icon="bolt">danger</fav-button>
+                  <fav-button type="info" icon="info">info</fav-button>
+              </p>
+              <p>
+                  <fav-button type="primary" outline icon="facebook">primary</fav-button>
+                  <fav-button type="secondary" outline icon="twitter">secondary</fav-button>
+                  <fav-button type="success" outline icon="coffee">success</fav-button>
+                  <fav-button type="warning" outline icon="check">warning</fav-button>
+                  <fav-button type="danger" outline icon="bolt">danger</fav-button>
+                  <fav-button type="info" outline icon="info">info</fav-button>
+              </p>
+              <p>
+                  <fav-button type="primary" loading icon="twitter">loading</fav-button>
+                  <fav-button type="primary" disabled icon="twitter">disabled</fav-button>
+                  <fav-button round>round</fav-button>
+              </p>
+              <p>
+                  <fav-button type="primary" full icon="twitter">fulll width</fav-button>
+              </p>
           </div>
 
       </main>

@@ -6,6 +6,34 @@
 //
 // - - - - - - - - - - - - - - - - - - - -
 
+
+// global
+// - - - - - - - - - - - - - - - - - - - -
+$_color-white: #fafafa;
+$_color-black: #333333;
+
+$_color-primary: #F55247;
+$_color-secondary: #50C7C1;
+
+$_color-success: #6084D0;
+$_color-warning: #FFCB67;
+$_color-danger: #ea1836;
+$_color-info: #878d99;
+
+$_color-text-primary: #333340;
+$_color-text-secondary: mix($_color-white, $_color-text-primary, 30%) !default;
+
+
+$_border-width-base: 3px;
+$_border-style-base: solid;
+$_border-color-base: #d8dce6;
+$_border-color-lighter: #e6ebf5 !default;
+$_border-default: $_border-width-base $_border-style-base $_border-color-base;
+$_border-radius-base: 4px;
+$_border-radius-small: 2px;
+$_border-radius-circle: 100%;
+
+
 // base
 // - - - - - - - - - - - - - - - - - - - -
 $_button-font-size: 16px;
@@ -74,7 +102,7 @@ $_button-disabled-border: $_border-color-base;
 // - - - - - - - - - - - - - - - - - - - -
 $_button-hover-percent: 20%;
 $_button-active-percent: 10%;
-
+$_button-transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
 
 // - - - - - - - - - - - - - - - - - - - -
 //
@@ -184,7 +212,7 @@ $_button-active-percent: 10%;
   background: $_button-default-fill;
   appearance: none;
   outline: none;
-  transition: all .2s;
+  transition: $_button-transition;
 
   + .c-button {
     margin-left: 1rem;

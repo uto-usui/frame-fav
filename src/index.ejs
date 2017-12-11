@@ -49,46 +49,49 @@ var page = {
 
         <style>
           .main {
-            padding: 1rem;
+            padding: 2rem;
           }
           p + p {
-            margin-top: 1rem;
+            margin-top: 2rem;
           }
         </style>
 
           <div id="app">
               <p>
-                  <fav-button type="" icon="">button</fav-button>
+                  <fav-button variation="" icon="">button</fav-button>
               </p>
               <p>
-                  <fav-button type="primary" icon="twitter">button</fav-button>
-                  <fav-button type="primary" size="small" icon="twitter">button</fav-button>
-                  <fav-button type="primary" size="medium" icon="twitter">button</fav-button>
-                  <fav-button type="primary" size="large" icon="twitter">button</fav-button>
+                  <fav-button variation="primary" icon="twitter">button</fav-button>
+                  <fav-button variation="primary" size="small" icon="twitter">button</fav-button>
+                  <fav-button variation="primary" size="medium" icon="twitter">button</fav-button>
+                  <fav-button variation="primary" size="large" icon="twitter">button</fav-button>
               </p>
               <p>
-                  <fav-button type="primary" icon="facebook">primary</fav-button>
-                  <fav-button type="secondary" icon="twitter">secondary</fav-button>
-                  <fav-button type="success" icon="coffee">success</fav-button>
-                  <fav-button type="warning" icon="check">warning</fav-button>
-                  <fav-button type="danger" icon="bolt">danger</fav-button>
-                  <fav-button type="info" icon="info">info</fav-button>
+                  <fav-button variation="primary" icon="facebook">primary</fav-button>
+                  <fav-button variation="secondary" icon="twitter">secondary</fav-button>
+                  <fav-button variation="success" icon="coffee">success</fav-button>
+                  <fav-button variation="warning" icon="check">warning</fav-button>
+                  <fav-button variation="danger" icon="bolt">danger</fav-button>
+                  <fav-button variation="info" icon="info">info</fav-button>
               </p>
               <p>
-                  <fav-button type="primary" outline icon="facebook">primary</fav-button>
-                  <fav-button type="secondary" outline icon="twitter">secondary</fav-button>
-                  <fav-button type="success" outline icon="coffee">success</fav-button>
-                  <fav-button type="warning" outline icon="check">warning</fav-button>
-                  <fav-button type="danger" outline icon="bolt">danger</fav-button>
-                  <fav-button type="info" outline icon="info">info</fav-button>
+                  <fav-button variation="primary" outline icon="facebook">primary</fav-button>
+                  <fav-button variation="secondary" outline icon="twitter">secondary</fav-button>
+                  <fav-button variation="success" outline icon="coffee">success</fav-button>
+                  <fav-button variation="warning" outline icon="check">warning</fav-button>
+                  <fav-button variation="danger" outline icon="bolt">danger</fav-button>
+                  <fav-button variation="info" outline icon="info">info</fav-button>
               </p>
               <p>
-                  <fav-button type="primary" loading icon="twitter">loading</fav-button>
-                  <fav-button type="primary" disabled icon="twitter">disabled</fav-button>
+                  <fav-button variation="primary" loading icon="twitter">loading</fav-button>
+                  <fav-button variation="primary" disabled icon="twitter">disabled</fav-button>
                   <fav-button round>round</fav-button>
               </p>
               <p>
-                  <fav-button type="primary" full icon="twitter">fulll width</fav-button>
+                  <fav-button variation="primary" full icon="twitter">full width</fav-button>
+              </p>
+              <p>
+                  <fav-button text @click="myAlert()">plane text alert button</fav-button>
               </p>
           </div>
 

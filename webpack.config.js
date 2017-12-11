@@ -45,13 +45,6 @@ module.exports = {
           }
         }
       },
-      {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        loaders: [
-          'css-loader',
-        ]
-      },
     ],
   },
   resolve: {

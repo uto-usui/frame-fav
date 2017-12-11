@@ -5,8 +5,6 @@ import favButton from 'Component/button';
 
 // import __$ from './utility/selector';
 
-// $('.main').addClass('is-active');
-
 ////
 new Vue({
   el: '#app',
@@ -14,6 +12,12 @@ new Vue({
     favButton
   },
   data: {
-    message: 'Hello,Vue.js!'
+    message: 'Hello,Vue.js!',
+    buutonState: {
+      loading: false,
+      disabled: false,
+    }
+  },
+  methods: {
   }
 });

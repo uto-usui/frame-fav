@@ -1,22 +1,24 @@
 <template>
-    <button
-            class="c-button"
-            :class="[
-              type ? 'c-button--' + type : '',
+  <button
+          class="c-button"
+          :class="[
+              variation ? 'c-button--' + variation : '',
               size ? 'c-button--' + size : '',
               {
-                'is-disabled': disabled,
-                'is-loading': loading,
                 'c-button--outline': outline,
                 'c-button--round': round,
-                'c-button--full': full
-              }
-             ]"
-            :disabled="disabled"
-            :type="buttonType"
-            :autofocus="autofocus"
-            @click="clickHandler"
-    >
+                'c-button--full': full,
+                'c-button--text': text,
+                'is-disabled': disabled,
+                'is-loading': loading,
+              }]"
+
+          :disabled="disabled"
+          :type="buttonType"
+          :autofocus="autofocus"
+
+          @click="clickHandler"
+  >
     <i
             :class="[
               'fa',
@@ -26,14 +28,14 @@
     >
     </i>
     <slot></slot>
-    </button>
+  </button>
 </template>
 
 <script>
   export default {
 
     props: {
-      type: {
+      variation: {
         type: String,
         default: ''
       },
@@ -46,12 +48,13 @@
         type: String,
         default: 'button'
       },
+      outline: Boolean,
+      round: Boolean,
+      full: Boolean,
+      text: Boolean,
       loading: Boolean,
       disabled: Boolean,
-      outline: Boolean,
       autofocus: Boolean,
-      round: Boolean,
-      full: Boolean
     },
 
 //    computed: {
@@ -65,6 +68,11 @@
 //    },
 
     methods: {
+
+      /**
+       * 親にクリックイベントを渡す
+       * @param e {Object} event object
+       */
       clickHandler: function(e) {
 
         if (this.disabled) {
@@ -78,4 +86,5 @@
 
     }
   };
+
 </script>

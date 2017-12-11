@@ -1,124 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "MyYuGothicM";
-  font-weight: normal;
-
-  src: local("YuGothic-Medium"), local("Yu Gothic Medium"), local("YuGothic-Regular");
-}
-
-@font-face {
-  font-family: "MyYuGothicM";
-  font-weight: bold;
-
-  src: local("YuGothic-Bold"), local("Yu Gothic");
-}
-
-/* Element Chalk Variables */
-/* Transition
--------------------------- */
-/* Colors
--------------------------- */
-/* 53a8ff */
-/* 66b1ff */
-/* 79bbff */
-/* 8cc5ff */
-/* a0cfff */
-/* b3d8ff */
-/* c6e2ff */
-/* d9ecff */
-/* ecf5ff */
-/* Link
--------------------------- */
-/* Background
--------------------------- */
-/* Border
--------------------------- */
-/* Box-shadow
--------------------------- */
-/* Fill
--------------------------- */
-/* Font
--------------------------- */
-/* Size
--------------------------- */
-/* z-index
--------------------------- */
-/* Disable base
--------------------------- */
-/* Icon
--------------------------- */
-/* Checkbox
--------------------------- */
-/* Radio
--------------------------- */
-/* Select
--------------------------- */
-/* Alert
--------------------------- */
-/* Message Box
--------------------------- */
-/* Message
--------------------------- */
-/* Notification
--------------------------- */
-/* Input
--------------------------- */
-/* Cascader
--------------------------- */
-/* Group
--------------------------- */
-/* Tab
--------------------------- */
-/* cascader
--------------------------- */
-/* Switch
--------------------------- */
-/* Dialog
--------------------------- */
-/* Table
--------------------------- */
-/* Pagination
--------------------------- */
-/* Popover
--------------------------- */
-/* Tooltip
--------------------------- */
-/* Tag
--------------------------- */
-/* Tree
--------------------------- */
-/* Dropdown
--------------------------- */
-/* Badge
--------------------------- */
-/* Card
---------------------------*/
-/* Slider
---------------------------*/
-/* Steps
---------------------------*/
-/* Menu
---------------------------*/
-/* Rate
---------------------------*/
-/* DatePicker
---------------------------*/
-/* Loading
---------------------------*/
-/* Scrollbar
---------------------------*/
-/* Carousel
---------------------------*/
-/* Collapse
---------------------------*/
-/* Transfer
---------------------------*/
-/* Header
-  --------------------------*/
-/* Footer
---------------------------*/
-/* Main
---------------------------*/
 /* Sass Document */
 @-webkit-keyframes spin {
   from {
@@ -3391,7 +3271,7 @@ select {
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
-  color: #333;
+  color: #333340;
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
@@ -3400,7 +3280,7 @@ select {
   border-color: #d8dce6;
   border-radius: 4px;
   outline: none;
-  transition: all .2s; 
+  transition: all .2s cubic-bezier(.23, 1, .32, 1); 
 
      -moz-appearance: none;
           appearance: none;
@@ -3611,50 +3491,50 @@ select {
 }
 .c-button.c-button--danger {
   color: #fafafa;
-  background-color: #fa5555;
-  border-color: #fa5555;
+  background-color: #ea1836;
+  border-color: #ea1836;
 }
 .c-button.c-button--danger:hover, .c-button.c-button--danger:focus {
   color: #fafafa; 
-  background: #fa7676;
-  border-color: #fa7676;
+  background: #ed455d;
+  border-color: #ed455d;
 }
 .c-button.c-button--danger:active {
   color: #fafafa;
-  background: #e65252;
-  border-color: #e65252;
+  background: #d81b36;
+  border-color: #d81b36;
   outline: none;
 }
 .c-button.c-button--danger.is-active {
   color: #fafafa; 
-  background: #e65252;
-  border-color: #e65252;
+  background: #d81b36;
+  border-color: #d81b36;
 }
 .c-button.c-button--danger.is-disabled, .c-button.c-button--danger.is-disabled:hover, .c-button.c-button--danger.is-disabled:focus, .c-button.c-button--danger.is-disabled:active {
   color: #fafafa;
-  background-color: #faa8a8;
-  border-color: #faa8a8;
+  background-color: #f28998;
+  border-color: #f28998;
 }
 .c-button.c-button--danger.c-button--outline {
-  color: #fa5555;
-  background: #faf7f7;
-  border-color: #fab8b8;
+  color: #ea1836;
+  background: #faf5f6;
+  border-color: #f4a0ac;
 }
 .c-button.c-button--danger.c-button--outline:hover, .c-button.c-button--danger.c-button--outline:focus {
   color: #fafafa; 
-  background: #fa5555;
-  border-color: #fa5555;
+  background: #ea1836;
+  border-color: #ea1836;
 }
 .c-button.c-button--danger.c-button--outline:active {
   color: #fafafa;
-  background: #e65252;
-  border-color: #e65252;
+  background: #d81b36;
+  border-color: #d81b36;
   outline: none;
 }
 .c-button.c-button--danger.c-button--outline.is-disabled:hover, .c-button.c-button--danger.c-button--outline.is-disabled:focus, .c-button.c-button--danger.c-button--outline.is-disabled:active {
-  color: #fa9797;
-  background-color: #faeaea;
-  border-color: #fad9d9;
+  color: #f07284;
+  background-color: #f8e3e6;
+  border-color: #f7cdd3;
 }
 .c-button.c-button--info {
   color: #fafafa;
@@ -3757,7 +3637,7 @@ select {
   border-color: #e24f45;
 }
 .c-button.is-disabled, .c-button.is-disabled:hover, .c-button.is-disabled:focus {
-  color: #333;
+  color: #6f6f78;
   cursor: not-allowed;
   background-color: #fafafa;
   background-image: none;
@@ -3767,7 +3647,7 @@ select {
   background-color: transparent;
 }
 .c-button.is-disabled.c-button--outline:hover, .c-button.is-disabled.c-button--outline:focus {
-  color: #333; 
+  color: #6f6f78; 
   background-color: #fafafa;
   border-color: #d8dce6;
 }

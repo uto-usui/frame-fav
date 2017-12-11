@@ -3907,8 +3907,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // import __$ from './utility/selector';
 
-// $('.main').addClass('is-active');
-
 ////
 new _Vue2.default({
   el: '#app',
@@ -3916,8 +3914,13 @@ new _Vue2.default({
     favButton: _button2.default
   },
   data: {
-    message: 'Hello,Vue.js!'
-  }
+    message: 'Hello,Vue.js!',
+    buutonState: {
+      loading: false,
+      disabled: false
+    }
+  },
+  methods: {}
 });
 
 /***/ }),
@@ -20307,11 +20310,13 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
 
 exports.default = {
 
   props: {
-    type: {
+    variation: {
       type: String,
       default: ''
     },
@@ -20324,12 +20329,13 @@ exports.default = {
       type: String,
       default: 'button'
     },
+    outline: Boolean,
+    round: Boolean,
+    full: Boolean,
+    text: Boolean,
     loading: Boolean,
     disabled: Boolean,
-    outline: Boolean,
-    autofocus: Boolean,
-    round: Boolean,
-    full: Boolean
+    autofocus: Boolean
   },
 
   //    computed: {
@@ -20343,7 +20349,12 @@ exports.default = {
   //    },
 
   methods: {
-    clickHandler: function clickHandler(e) {
+
+    /**
+     * 親にクリックイベントを渡す
+     * @param e {Object} event object
+     */
+    clickHandler: function (e) {
 
       if (this.disabled) {
 
@@ -20369,14 +20380,15 @@ var render = function() {
     {
       staticClass: "c-button",
       class: [
-        _vm.type ? "c-button--" + _vm.type : "",
+        _vm.variation ? "c-button--" + _vm.variation : "",
         _vm.size ? "c-button--" + _vm.size : "",
         {
-          "is-disabled": _vm.disabled,
-          "is-loading": _vm.loading,
           "c-button--outline": _vm.outline,
           "c-button--round": _vm.round,
-          "c-button--full": _vm.full
+          "c-button--full": _vm.full,
+          "c-button--text": _vm.text,
+          "is-disabled": _vm.disabled,
+          "is-loading": _vm.loading
         }
       ],
       attrs: {
